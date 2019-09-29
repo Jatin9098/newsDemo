@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">w
+
+    <item
+        android:title="Share"
+        android:id="@+id/item_share"
+        app:showAsAction="never"/>
+
+    <item
+        android:title="View on Web"
+        android:id="@+id/item_on_web"
+        app:showAsAction="never"/>
+
+    <item
+        android:checked="false"
+        android:title="Like"
+        android:icon="@drawable/ic_unlike"
+        android:id="@+id/item_like"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">News</string>
+    <string name="color_format"><![CDATA[<b><font color=#D3D3D3>#</font></b>]]></string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="oops">Opps!</string>
+    <string name="ok">Ok</string>
+    <string name="news_default">https://www.afaqs.com/all/news/images/news_story_grfx/2013/07/38110/IBN7-New-logo.jpg</string>
+    <string name="share_data">Hey check out my app at: https://play.google.com/store/apps/details?id=com.news</string>
+    <string name="top_news">TOP NEWS</string>
+</resources>

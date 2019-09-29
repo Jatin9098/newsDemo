@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/action_bar">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".controller.newsReadActivity.NewsReadActivity">
+
+            <TextView
+                android:transitionName="txtName"
+                android:textAllCaps="false"
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/margin40"
+                android:layout_marginTop="@dimen/margin20"
+                android:layout_marginEnd="@dimen/margin40"
+                android:background="@drawable/txt_name_border"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="@dimen/margin5"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text25"
+                android:textStyle="bold" />
+
+
+            <ImageView
+
+                android:id="@+id/imgUrl"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/txtName"
+                android:layout_marginTop="@dimen/margin20"
+                android:scaleType="centerCrop"
+                android:src="@drawable/news_placeholder"
+                android:transitionName="profile" />
+
+
+            <TextView
+
+                android:id="@+id/txtNewsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgUrl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin20"
+                android:layout_marginEnd="@dimen/margin10"
+                android:fontFamily="@font/nexa_bold"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text20"
+                android:textStyle="normal"
+                android:transitionName="txtNewsTitle" />
+
+            <TextView
+                android:transitionName="txtAuthorPublishDate"
+                android:id="@+id/txtAuthorPublishDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNewsTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin20"
+                android:layout_marginEnd="@dimen/margin10"
+                android:fontFamily="@font/nexa_light"
+                android:text="@string/app_name"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text15"
+                android:textStyle="normal"
+                />
+
+            <View
+                android:layout_marginStart="@dimen/margin10"
+                android:layout_marginEnd="@dimen/margin10"
+               android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txtAuthorPublishDate"
+              />
+
+            <TextView
+                android:id="@+id/txtNewsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtAuthorPublishDate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin20"
+                android:layout_marginEnd="@dimen/margin10"
+                android:layout_marginBottom="@dimen/margin40"
+                android:fontFamily="@font/nexa_light"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text18"
+                android:textStyle="normal"
+                android:transitionName="text" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

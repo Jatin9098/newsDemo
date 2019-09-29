@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="@dimen/margin10"
+    android:layout_marginLeft="@dimen/margin10"
+    android:layout_marginRight="@dimen/margin10"
+    android:layout_marginBottom="@dimen/margin10">
+
+    <TextView
+        android:transitionName="txtName"
+        android:layout_toLeftOf="@+id/imgUrl"
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/margin5"
+        android:gravity="start"
+        android:layout_above="@+id/txtNewsTitle"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:paddingRight="@dimen/margin5"
+        android:paddingLeft="@dimen/margin5"
+        android:text="@string/app_name"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:transitionName="txtNewsTitle"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/imgUrl"
+        android:id="@+id/txtNewsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/margin5"
+        android:gravity="start"
+        android:maxLines="3"
+        android:textSize="@dimen/text15"
+        android:textStyle="normal"
+        android:ellipsize="end"
+        android:paddingLeft="@dimen/margin5"
+        android:paddingRight="@dimen/margin5"
+        android:text="@string/app_name"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:transitionName="txtAuthorPublishDate"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/txtAuthorPublishDate"
+        android:layout_toLeftOf="@+id/imgUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/margin5"
+        android:gravity="start"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:paddingLeft="@dimen/margin5"
+        android:paddingRight="@dimen/margin5"
+        android:text="@string/app_name"
+        android:textColor="@color/gray" />
+
+    <ImageView
+        android:transitionName="profile"
+        android:id="@+id/imgUrl"
+        android:layout_width="@dimen/margin100"
+        android:layout_height="@dimen/margin100"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/margin5"
+        android:scaleType="fitXY" />
+
+
+</RelativeLayout>
+
+
+
+
+
+
